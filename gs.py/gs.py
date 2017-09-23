@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
     print(finallis)
 
-    write_json(finallis,'output.txt')
+    write_json(finallis,'big_output.txt')
 
     end_time = time.process_time()
     # write output file
