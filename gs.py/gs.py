@@ -15,6 +15,7 @@ if __name__ == '__main__':
 
     finallis=[]
     data = read_json('big_prob_input.json')
+
     '''
     manlist:  {'j0': ['k2', 'k1', 'k0'], 'j1': ['k2', 'k1', 'k0'], 'j2': ['k0', 'k2', 'k1']}
     man;  ['j0', 'j1', 'j2']
@@ -24,9 +25,8 @@ if __name__ == '__main__':
     {'j0': 'k2', 'j1': 'k1', 'j2': 'k0'}
     '''
     num=0
+
     while(num < len(data)):
-
-
         li=data[num]
     #print('dict is:',li)
         manlist = li[0]
