@@ -14,7 +14,7 @@ if __name__ == '__main__':
     start_time = time.process_time()
 
     finallis=[]
-    data = read_json('small_prob_input.json')
+    data = read_json('big_prob_input.json')
     '''
     manlist:  {'j0': ['k2', 'k1', 'k0'], 'j1': ['k2', 'k1', 'k0'], 'j2': ['k0', 'k2', 'k1']}
     man;  ['j0', 'j1', 'j2']
@@ -43,14 +43,7 @@ if __name__ == '__main__':
     #print('woman is:', woman)
 
 
-
-
         matchdict = {}
-
-    #while(len(manlist) != 0):
-
-    #return matchdict
-
 
         while(len(man) != 0):
             manpick=man[0]
@@ -74,7 +67,7 @@ if __name__ == '__main__':
 
     print(finallis)
 
-    write_json(finallis,'small_output.txt')
+    write_json(finallis,'big_output.txt')
 
     end_time = time.process_time()
     # write output file
