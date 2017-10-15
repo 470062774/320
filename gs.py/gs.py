@@ -1,5 +1,4 @@
 import json
-import time
 
 def write_json(obj, filename):
     with open(filename, mode='w') as f:
@@ -11,7 +10,6 @@ def read_json(filename):
         return json.load(f)
 
 if __name__ == '__main__':
-    start_time = time.process_time()
 
     finallis=[]
     data = read_json('big_prob_input.json')
@@ -68,7 +66,3 @@ if __name__ == '__main__':
     print(finallis)
 
     write_json(finallis,'big_output.txt')
-
-    end_time = time.process_time()
-    # write output file
-    print("Ran in: {:.5f} secs".format(end_time - start_time))
